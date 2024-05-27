@@ -16,7 +16,7 @@ function App() {
         const features = inputValue.split(',').map(Number);
 
         try {
-            const response = await axios.post('http://127.0.0.1:5000/predict', {
+            const response = await axios.post('https://mine-vs-rock-4.onrender.com/predict', {
                 features: features,
             });
             console.log(response.data.prediction);
